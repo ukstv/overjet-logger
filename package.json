@@ -1,6 +1,6 @@
 {
   "name": "overjet-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jet-logger with kleur",
   "type": "module",
   "main": "./dist/index.js",
@@ -11,7 +11,8 @@
     }
   },
   "scripts": {
-    "build": "./node_modules/.bin/tsc --project ."
+    "build": "./node_modules/.bin/tsc --project .",
+    "prepublishOnly": "pnpm run build"
   },
   "files": [
     "./dist/*"
