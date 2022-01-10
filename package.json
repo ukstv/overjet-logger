@@ -15,7 +15,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "files": [
-    "./dist/*"
+    "dist/*"
   ],
   "keywords": [],
   "author": "Sergey Ukustov <sergey@ukstv.me>",
