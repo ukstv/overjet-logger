@@ -334,7 +334,7 @@ class Logger {
         }
         // Print Console
         if (mode === LoggerModes.Console) {
-            const colorFn = (picocolors as any).default[level.color];
+            const colorFn = (picocolors as any)[level.color];
             console.log(colorFn(content));
         // Print File
         } else if (mode === LoggerModes.File) {

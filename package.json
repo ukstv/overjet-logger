@@ -1,6 +1,6 @@
 {
   "name": "overjet-logger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "jet-logger with kleur",
   "type": "module",
   "main": "./dist/index.js",
