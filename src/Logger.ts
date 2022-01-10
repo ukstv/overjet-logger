@@ -7,7 +7,7 @@
  * created by Sean Maxwell Oct 10, 2020
  */
 
-import * as picocolors from 'picocolors';
+import picocolors from 'picocolors';
 import { appendFile } from 'fs/promises';
 import { inspect } from 'util';
 import { LoggerModes, Formats, ICustomLogger } from './constants.js';
@@ -334,7 +334,7 @@ class Logger {
         }
         // Print Console
         if (mode === LoggerModes.Console) {
-            const colorFn = (picocolors as any)[level.color];
+            const colorFn = (picocolors as any).default[level.color];
             console.log(colorFn(content));
         // Print File
         } else if (mode === LoggerModes.File) {
