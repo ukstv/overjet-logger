@@ -1,13 +1,13 @@
 {
   "name": "overjet-logger",
   "version": "1.0.4",
-  "description": "jet-logger with kleur",
+  "description": "jet-logger with picocolors",
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./dist/index.mjs"
     }
   },
   "scripts": {
