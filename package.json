@@ -1,17 +1,20 @@
 {
   "name": "overjet-logger",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "jet-logger with picocolors",
   "type": "module",
-  "main": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
     }
   },
   "scripts": {
     "build": "./node_modules/.bin/tsc --project .",
+    "build:js": "microbundle --compress=false",
     "prepublishOnly": "pnpm run build"
   },
   "files": [
@@ -22,6 +25,7 @@
   "license": "(MIT OR Apache-2.0)",
   "devDependencies": {
     "@types/node": "^17.0.8",
+    "microbundle": "^0.14.2",
     "typescript": "^4.5.4"
   },
   "dependencies": {

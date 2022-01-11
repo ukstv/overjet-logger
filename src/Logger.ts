@@ -10,7 +10,7 @@
 import picocolors from 'picocolors';
 import { appendFile } from 'fs/promises';
 import { inspect } from 'util';
-import { LoggerModes, Formats, ICustomLogger } from './constants.mjs';
+import { LoggerModes, Formats, ICustomLogger } from './constants.js';
 
 
 
