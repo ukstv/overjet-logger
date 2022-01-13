@@ -13,8 +13,7 @@
     }
   },
   "scripts": {
-    "build": "./node_modules/.bin/tsc --project .",
-    "build:js": "microbundle --compress=false",
+    "build": "microbundle --compress=false",
     "prepublishOnly": "pnpm run build"
   },
   "files": [
